@@ -1,0 +1,10 @@
+Deployment Incident Guide
+
+If a problem begins immediately after a deployment:
+
+1. Review deployment logs for errors or failed configuration steps.
+2. Compare the new release configuration with the previous stable release.
+3. Check application health checks and dependent service status.
+4. Identify how many customers or users are affected.
+5. Roll back the release if the impact is high and the root cause cannot be resolved quickly.
+6. Record the incident timeline and the final resolution.

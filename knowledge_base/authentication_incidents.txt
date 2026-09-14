@@ -1,0 +1,11 @@
+Authentication Incident Guide
+
+A 401 response means that a request is missing valid authentication credentials.
+
+If multiple users receive 401 errors after a deployment:
+
+1. Check whether authentication settings or environment variables changed during the deployment.
+2. Verify that clients send a valid API key or access token in the Authorization header.
+3. Confirm that the authentication service is healthy and reachable.
+4. Check whether a recent configuration change invalidated existing user sessions.
+5. If the deployment caused the issue, consider rolling back to the previous stable version.

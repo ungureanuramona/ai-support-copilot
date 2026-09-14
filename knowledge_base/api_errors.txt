@@ -1,0 +1,9 @@
+API Error Handling Guide
+
+Common API responses:
+
+- 401: Authentication credentials are missing or invalid.
+- 429: The client is sending too many requests. Use exponential backoff before retrying.
+- 500: A server-side error occurred. Capture the request ID, check service health, and escalate if the issue continues.
+
+When investigating an API error, collect the endpoint, timestamp, request ID, response code, and affected customer details.
