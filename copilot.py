@@ -65,21 +65,30 @@ Ticket description: {description}
 Support guidance:
 {context}
 
-Use exactly these headings:
+Return only a Markdown response in exactly this format:
 
-Category:
-Priority:
-Recommended next steps:
-Customer response:
+## Category
 
-For recommended next steps, use the support guidance and do not claim that an investigation step has already happened.
+Write the category.
 
-For customer response, write a concise message from the support team to the customer.
+## Priority
 
-At the end, add:
-Sources:
+Write the priority and a short reason.
 
-List the filenames you used.
+## Recommended next steps
+
+Write a numbered list of practical investigation or resolution steps.
+
+## Customer response
+
+Write a concise and professional message from the support team to the customer.
+
+## Sources
+
+Write the filenames used.
+
+Do not add an introduction before the Category section.
+Do not claim that any investigation step has already happened.
 """
 
     response = chat(
